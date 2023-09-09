@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header h2 {
+    background-color: blue;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    min-height: 80vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 5px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+}
+
+/* Style the Slack username */
+[data-testid="ayodeji_adetayo"] {
+    /* font-weight: bold; */
+    color: blue;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    /* Slack's brand color */
+    font-family: sans-serif;
+}
+
+/* Style the Slack display image */
+
+[data-testid="slackDisplayImage"] {
+    margin: 20px auto;
+    display: block;
+    width: 150px;
+    object-fit: cover;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border: 5px solid transparent;
+    background-clip: padding-box;
+    background-image: linear-gradient(45deg, blue, #00e6e6);
+
+}
+
+
+
+
+/* Style the current day of the week and UTC time */
+[data-testid="currentDayOfTheWeek"],
+[data-testid="currentTime"],
+[data-testid="currentDate"],
+[data-testid="currentUTCTime"],
+[data-testid="myTrack"],
+[data-testid="githubURL"] {
+    font-size: 18px;
+    margin: 10px auto;
+    color: #555;
+    display: flex;
+    justify-content: center;
+}
+
+/* Style the GitHub link */
+[data-testid="githubURL"] {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+[data-testid="githubURL"]:hover {
+    color: #007acc;
+    /* Slack's brand color */
+}
+
+.git {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+a p {
+    margin-right: 5px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        width: 60vw;
+    }
+
+    [data-testid="slackDisplayImage"] {
+        /* width: 100px;
+        height: 100px; */
+        margin: 10px auto;
+    }
+
+
+    [data-testid="currentDayOfTheWeek"],
+    [data-testid="currentTime"],
+    [data-testid="currentDate"],
+    [data-testid="currentUTCTime"],
+    [data-testid="myTrack"],
+    [data-testid="githubURL"] {
+        font-size: 16px;
+    }
+}
